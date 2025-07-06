@@ -22,14 +22,14 @@
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Document      │    │   Vector Store  │    │   LLM Service   │
-│   Processor     │───▶│   (Memory/      │───▶│   (OpenAI/      │
+│   Processor     │───▶│   (Memory/      │───▶│   (OpenAI/     │
 │                 │    │    ChromaDB)    │    │    Ollama)      │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │
          ▼                       ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Knowledge     │    │   FastAPI       │    │   Multi-round   │
-│   Service       │◀───│   HTTP API      │◀───│   Retrieval     │
+│   Service       │◀───│   HTTP API      │◀──│   Retrieval     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
